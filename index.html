@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta name="theme-color" content="#1E3A2F">
-<title>親コンディション年齢診断 | Ly:set</title>
+<meta name="theme-color" content="#8B1A2E">
+<title>1分でわかる！私の『親コンディション』セルフチェック | Ly:set</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 <style>
@@ -12,26 +12,26 @@
    DESIGN TOKENS
 ══════════════════════════════════ */
 :root{
-  --forest: #1A2E1E;
-  --green:  #2D6A4F;
-  --mint:   #52B788;
-  --mintlt: #B7E4C7;
-  --cream:  #F8F5EF;
-  --parch:  #F0EBE1;
-  --rose:   #C4697A;
-  --roselt: #FAE8EC;
-  --gold:   #B8935A;
-  --goldlt: #FBF5E8;
-  --ink:    #1C1814;
-  --mid:    #6B6158;
-  --line:   #DDD7CE;
+  --forest: #8B1A2E;
+  --green:  #A0283E;
+  --mint:   #C4697A;
+  --mintlt: #F5C5CE;
+  --cream:  #FDF5F0;
+  --parch:  #FAF0EC;
+  --rose:   #8B1A2E;
+  --roselt: #FDEAED;
+  --gold:   #C4697A;
+  --goldlt: #FDF0F2;
+  --ink:    #2A1A1E;
+  --mid:    #7A5A60;
+  --line:   #F0D8DC;
   --white:  #FFFFFF;
-  --r:4px;
+  --r:8px;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 body{
-  background:var(--forest);
+  background:#FDF0F0;
   color:var(--ink);
   font-family:'Noto Sans JP',sans-serif;
   font-weight:300;
@@ -42,9 +42,9 @@ body::before{
   content:'';
   position:fixed;inset:0;z-index:0;
   background:
-    radial-gradient(ellipse 80% 60% at 20% 5%,  rgba(82,183,136,.16) 0%,transparent 55%),
-    radial-gradient(ellipse 55% 70% at 85% 90%, rgba(196,105,122,.11) 0%,transparent 55%),
-    radial-gradient(ellipse 40% 40% at 55% 45%, rgba(184,147,90,.07)  0%,transparent 50%);
+    radial-gradient(ellipse 80% 60% at 20% 5%,  rgba(255,220,220,.35) 0%,transparent 55%),
+    radial-gradient(ellipse 55% 70% at 85% 90%, rgba(196,105,122,.15) 0%,transparent 55%),
+    radial-gradient(ellipse 40% 40% at 55% 45%, rgba(255,200,200,.12)  0%,transparent 50%);
   pointer-events:none;
 }
 
@@ -105,23 +105,23 @@ body::before{
 .s0-tag{
   display:inline-block;
   font-size:9.5px;letter-spacing:.2em;
-  color:var(--mint);border:1px solid var(--mint);
+  color:var(--rose);border:1px solid var(--rose);
   padding:4px 13px;margin-bottom:18px;
 }
 .s0-ttl{
   font-family:'Noto Serif JP',serif;
   font-size:clamp(25px,7vw,34px);
   font-weight:400;line-height:1.5;letter-spacing:.05em;
-  color:var(--white);margin-bottom:10px;
+  color:#2A1A1E;margin-bottom:10px;
 }
-.s0-ttl .ac{color:var(--mint)}
+.s0-ttl .ac{color:var(--rose)}
 .s0-sub{
-  font-size:13px;color:rgba(255,255,255,.62);
+  font-size:13px;color:rgba(80,30,40,.75);
   line-height:1.9;margin-bottom:24px;
 }
 .s0-stats{
-  background:rgba(255,255,255,.07);
-  border:1px solid rgba(255,255,255,.12);
+  background:rgba(255,255,255,.80);
+  border:1px solid rgba(196,105,122,.25);
   border-radius:var(--r);
   padding:18px 20px;margin-bottom:24px;
   display:grid;grid-template-columns:1fr 1fr;gap:14px;
@@ -129,22 +129,22 @@ body::before{
 .stat-item{text-align:center}
 .stat-n{
   font-family:'Cormorant Garamond',serif;
-  font-size:32px;font-weight:300;color:var(--mint);line-height:1;margin-bottom:4px;
+  font-size:32px;font-weight:300;color:var(--rose);line-height:1;margin-bottom:4px;
 }
-.stat-l{font-size:10px;letter-spacing:.1em;color:rgba(255,255,255,.5)}
+.stat-l{font-size:10px;letter-spacing:.1em;color:rgba(80,30,40,.6)}
 .start-btn{
   width:100%;padding:17px;
-  background:var(--mint);color:var(--forest);
+  background:var(--rose);color:#FFFFFF;
   border:none;border-radius:var(--r);
   font-family:'Noto Sans JP',sans-serif;
   font-size:15px;font-weight:700;letter-spacing:.1em;
   cursor:pointer;transition:all .2s;
   -webkit-tap-highlight-color:transparent;
 }
-.start-btn:active{background:#3EA070;transform:translateY(-1px)}
+.start-btn:active{background:#7A1525;transform:translateY(-1px)}
 .s0-note{
   text-align:center;font-size:11px;
-  color:rgba(255,255,255,.35);
+  color:rgba(80,30,40,.45);
   margin-top:13px;letter-spacing:.06em;
 }
 
@@ -157,7 +157,7 @@ body::before{
   overflow:hidden;margin-bottom:16px;
 }
 .age-card-top{
-  background:var(--green);
+  background:var(--rose);
   padding:20px 22px 18px;
 }
 .age-card-ttl{
@@ -185,8 +185,8 @@ body::before{
 .age-note{font-size:11px;color:var(--mid);letter-spacing:.06em}
 .age-next{
   width:100%;padding:15px;
-  background:var(--forest);color:var(--mintlt);
-  border:2px solid var(--mint);border-radius:var(--r);
+  background:var(--rose);color:#FFFFFF;
+  border:2px solid var(--rose);border-radius:var(--r);
   font-family:'Noto Sans JP',sans-serif;
   font-size:14px;font-weight:500;letter-spacing:.12em;
   cursor:pointer;transition:all .2s;
@@ -194,7 +194,7 @@ body::before{
   -webkit-tap-highlight-color:transparent;
 }
 .age-next.on{opacity:1;pointer-events:all}
-.age-next.on:active{background:var(--green)}
+.age-next.on:active{background:#7A1525}
 
 /* ══════════════════════════════════
    SCREEN: 質問
@@ -202,25 +202,25 @@ body::before{
 #sQ{padding-top:0}
 .q-hdr{padding:20px 0 16px}
 .prog-wrap{
-  background:rgba(255,255,255,.12);border-radius:99px;
+  background:rgba(196,105,122,.15);border-radius:99px;
   height:4px;margin-bottom:9px;overflow:hidden;
 }
 .prog-fill{
-  height:100%;background:var(--mint);border-radius:99px;
+  height:100%;background:var(--rose);border-radius:99px;
   transition:width .4s cubic-bezier(.16,1,.3,1);
 }
 .prog-row{display:flex;justify-content:space-between;align-items:center}
-.prog-step{font-size:11px;letter-spacing:.1em;color:rgba(255,255,255,.5)}
-.prog-theme{font-size:11px;letter-spacing:.08em;color:var(--mint)}
+.prog-step{font-size:11px;letter-spacing:.1em;color:rgba(80,30,40,.55)}
+.prog-theme{font-size:11px;letter-spacing:.08em;color:var(--rose)}
 
 .q-card{
   background:var(--cream);border-radius:var(--r);
   overflow:hidden;margin-bottom:14px;
 }
-.q-card-top{background:var(--green);padding:18px 20px 16px}
+.q-card-top{background:var(--rose);padding:18px 20px 16px}
 .q-num{
   font-family:'Cormorant Garamond',serif;
-  font-size:11px;letter-spacing:.2em;color:var(--mintlt);
+  font-size:11px;letter-spacing:.2em;color:rgba(255,255,255,.8);
   margin-bottom:7px;display:block;
 }
 .q-txt{
@@ -228,7 +228,7 @@ body::before{
   font-size:16px;font-weight:400;line-height:1.65;
   color:var(--white);letter-spacing:.04em;
 }
-.q-hint{font-size:11px;color:rgba(255,255,255,.55);margin-top:5px;line-height:1.7}
+.q-hint{font-size:11px;color:rgba(255,255,255,.75);margin-top:5px;line-height:1.7}
 
 .choices{padding:12px 14px 16px;display:flex;flex-direction:column;gap:9px}
 .ch-btn{
@@ -242,8 +242,8 @@ body::before{
   -webkit-tap-highlight-color:transparent;line-height:1.55;
 }
 .ch-btn:active{border-color:var(--mint);background:var(--parch)}
-.ch-btn.sel{background:var(--forest);border-color:var(--mint);color:var(--white)}
-.ch-btn.sel .ch-dot{background:var(--mint);border-color:var(--mint);color:var(--forest)}
+.ch-btn.sel{background:var(--rose);border-color:var(--rose);color:var(--white)}
+.ch-btn.sel .ch-dot{background:#FFFFFF;border-color:#FFFFFF;color:var(--rose)}
 .ch-dot{
   flex-shrink:0;width:22px;height:22px;border-radius:50%;
   border:1.5px solid var(--line);
@@ -255,20 +255,20 @@ body::before{
 .btn-row{display:flex;gap:10px;align-items:stretch}
 .back-btn{
   flex-shrink:0;width:52px;padding:15px 0;
-  background:transparent;color:rgba(255,255,255,.45);
-  border:1px solid rgba(255,255,255,.18);border-radius:var(--r);
+  background:transparent;color:rgba(139,26,46,.5);
+  border:1px solid rgba(139,26,46,.2);border-radius:var(--r);
   font-family:'Noto Sans JP',sans-serif;
   font-size:18px;font-weight:300;
   cursor:pointer;transition:all .2s;
   -webkit-tap-highlight-color:transparent;
   display:flex;align-items:center;justify-content:center;
 }
-.back-btn:active{color:rgba(255,255,255,.85);border-color:rgba(255,255,255,.45)}
+.back-btn:active{color:rgba(139,26,46,.9);border-color:rgba(139,26,46,.5)}
 .back-btn.hidden{visibility:hidden;pointer-events:none}
 .next-btn{
   flex:1;padding:15px;
-  background:var(--forest);color:var(--mintlt);
-  border:2px solid var(--mint);border-radius:var(--r);
+  background:var(--rose);color:#FFFFFF;
+  border:2px solid var(--rose);border-radius:var(--r);
   font-family:'Noto Sans JP',sans-serif;
   font-size:14px;font-weight:500;letter-spacing:.12em;
   cursor:pointer;transition:all .2s;
@@ -276,7 +276,7 @@ body::before{
   -webkit-tap-highlight-color:transparent;
 }
 .next-btn.on{opacity:1;pointer-events:all}
-.next-btn.on:active{background:var(--green)}
+.next-btn.on:active{background:#7A1525}
 
 /* ══════════════════════════════════
    SCREEN: LOADING
@@ -289,14 +289,14 @@ body::before{
 #sLoad.on{display:flex}
 .ring{
   width:70px;height:70px;
-  border:3px solid rgba(82,183,136,.2);
-  border-top-color:var(--mint);
+  border:3px solid rgba(196,105,122,.2);
+  border-top-color:var(--rose);
   border-radius:50%;
   animation:spin 1s linear infinite;
   margin-bottom:22px;
 }
 @keyframes spin{to{transform:rotate(360deg)}}
-.load-ttl{font-family:'Noto Serif JP',serif;font-size:15px;color:var(--mintlt);letter-spacing:.08em;margin-bottom:7px}
+.load-ttl{font-family:'Noto Serif JP',serif;font-size:15px;color:var(--rose);letter-spacing:.08em;margin-bottom:7px}
 .load-sub{font-size:11.5px;color:rgba(255,255,255,.4);letter-spacing:.06em}
 
 /* ══════════════════════════════════
@@ -305,14 +305,14 @@ body::before{
 #sRes{padding-top:10px}
 
 .res-top{text-align:center;padding:28px 0 20px}
-.res-eyebrow{font-size:10px;letter-spacing:.22em;color:var(--mint);margin-bottom:12px;display:block}
+.res-eyebrow{font-size:10px;letter-spacing:.22em;color:var(--rose);margin-bottom:12px;display:block}
 
 /* 年齢リング */
 .ring-wrap{position:relative;width:156px;height:156px;margin:0 auto 12px}
 .ring-svg{width:156px;height:156px;transform:rotate(-90deg)}
 .ring-bg{fill:none;stroke:rgba(255,255,255,.1);stroke-width:9}
 .ring-arc{
-  fill:none;stroke:var(--mint);stroke-width:9;
+  fill:none;stroke:var(--rose);stroke-width:9;
   stroke-linecap:round;
   stroke-dasharray:428;stroke-dashoffset:428;
   transition:stroke-dashoffset 1.7s cubic-bezier(.16,1,.3,1) .25s;
@@ -338,7 +338,7 @@ body::before{
   font-size:12px;letter-spacing:.06em;font-weight:500;
   margin-bottom:12px;
 }
-.diff-pill.good {background:rgba(82,183,136,.15);color:var(--mint);border:1px solid var(--mint)}
+.diff-pill.good {background:rgba(196,105,122,.12);color:var(--rose);border:1px solid var(--rose)}
 .diff-pill.warn {background:rgba(184,147,90,.15);color:var(--gold);border:1px solid var(--gold)}
 .diff-pill.alert{background:rgba(196,105,122,.15);color:var(--rose);border:1px solid var(--rose)}
 
@@ -346,7 +346,7 @@ body::before{
 
 /* スコア内訳 */
 .sec-lbl{
-  font-size:10px;letter-spacing:.22em;color:var(--mint);
+  font-size:10px;letter-spacing:.22em;color:var(--rose);
   margin:24px 0 11px;
 }
 .score-list{display:flex;flex-direction:column;gap:11px;margin-bottom:6px}
@@ -362,14 +362,14 @@ body::before{
 
 /* 整える順番カード */
 .order-card{
-  background:rgba(255,255,255,.07);
-  border:1px solid rgba(255,255,255,.12);
+  background:rgba(255,255,255,.80);
+  border:1px solid rgba(196,105,122,.25);
   border-radius:var(--r);
   overflow:hidden;
   margin:24px 0 0;
 }
 .order-head{
-  background:var(--green);
+  background:var(--rose);
   padding:14px 18px;
 }
 .order-head-ttl{
@@ -389,7 +389,7 @@ body::before{
   font-size:15px;font-weight:300;color:var(--forest);
   margin-top:2px;
 }
-.step1-num{background:var(--mint)}
+.step1-num{background:var(--rose)}
 .step2-num{background:var(--gold)}
 .prod-content{}
 .prod-name{
@@ -415,7 +415,7 @@ body::before{
   background:var(--cream);border-radius:var(--r);
   overflow:hidden;margin-top:20px;margin-bottom:12px;
 }
-.cta-top{background:var(--green);padding:16px 18px}
+.cta-top{background:#7A1525;padding:16px 18px}
 .cta-top-eyebrow{font-size:9.5px;letter-spacing:.2em;color:var(--mintlt);margin-bottom:6px}
 .cta-top-ttl{
   font-family:'Noto Serif JP',serif;
@@ -426,7 +426,7 @@ body::before{
 .cta-body p{font-size:12.5px;color:var(--mid);line-height:1.8;margin-bottom:14px}
 .cta-primary{
   display:block;width:100%;padding:15px;
-  background:var(--mint);color:var(--forest);
+  background:#FFFFFF;color:var(--rose);
   border:none;border-radius:var(--r);
   font-family:'Noto Sans JP',sans-serif;
   font-size:13px;font-weight:700;letter-spacing:.1em;
@@ -434,7 +434,7 @@ body::before{
   cursor:pointer;transition:all .2s;margin-bottom:10px;
   -webkit-tap-highlight-color:transparent;
 }
-.cta-primary:active{background:#3EA070}
+.cta-primary:active{background:#f0e0e0}
 .cta-secondary{
   display:block;width:100%;padding:12px;
   background:transparent;color:var(--green);
@@ -449,8 +449,8 @@ body::before{
 
 /* 誘導トーク吹き出し */
 .balloon{
-  background:var(--goldlt);
-  border:1px solid #D4B07A;
+  background:#FFF0F2;
+  border:1px solid var(--rose);
   border-radius:var(--r);
   padding:14px 16px;
   margin:14px 0 6px;
@@ -465,15 +465,15 @@ body::before{
 
 .retry-btn{
   width:100%;padding:11px;
-  background:transparent;color:rgba(255,255,255,.4);
-  border:1px solid rgba(255,255,255,.14);
+  background:transparent;color:rgba(139,26,46,.5);
+  border:1px solid rgba(139,26,46,.2);
   border-radius:var(--r);
   font-family:'Noto Sans JP',sans-serif;
   font-size:12px;letter-spacing:.1em;
   cursor:pointer;margin-top:6px;margin-bottom:24px;
   -webkit-tap-highlight-color:transparent;
 }
-.retry-btn:active{color:rgba(255,255,255,.75)}
+.retry-btn:active{color:rgba(139,26,46,.9)}
 </style>
 </head>
 <body>
@@ -490,7 +490,7 @@ body::before{
   ════════════════════════ -->
   <div class="scr on" id="s0">
     <span class="s0-tag">PARENT CONDITION CHECK</span>
-    <h1 class="s0-ttl">あなたの<br><span class="ac">親コンディション</span><br>年齢、いくつ？</h1>
+    <h1 class="s0-ttl">1分でわかる！<br>私の<span class="ac">『親コンディション』</span><br>セルフチェック</h1>
     <p class="s0-sub">
       腸・睡眠・メンタル——<br>
       子育て中のお母さんの体は、<strong style="color:#fff">知らないうちに消耗</strong>しています。<br>
@@ -939,26 +939,18 @@ function buildResult(){
       </div>
     </div>
 
-    <!-- 誘導トーク -->
-    <div class="balloon">
-      「詳しい使い方やおすすめの飲み方は<br>LINEでまとめています。」<br><br>
-      「イベント参加者限定で<strong>割引</strong>もついています。」
-    </div>
-
     <!-- CTA -->
     <div class="cta-block">
       <div class="cta-top">
         <div class="cta-top-eyebrow">NEXT STEP</div>
-        <div class="cta-top-ttl">LINEでサンプルの使い方＋<br>イベント限定クーポンを受け取る</div>
+        <div class="cta-top-ttl">使い方・飲む順番・<br>イベント限定クーポンはLINEで</div>
       </div>
       <div class="cta-body">
-        <p>飲む順番・タイミング・おすすめの飲み方をLINEでまとめています。登録後すぐに確認できます。<br>イベント参加者限定の割引クーポンもLINEから取得できます。</p>
         <a href="https://line.me/R/ti/p/@130lbjna" class="cta-primary">
-          📲 LINEで使い方＋クーポンを受け取る
+          🎁 友だち追加してクーポンを受け取る
         </a>
-        <a href="https://www.instagram.com/lysetjensen/" class="cta-secondary">
-          @lysetjensen をフォローして毎日の体ケア情報を受け取る
-        </a>
+        <p style="margin-top:14px">飲む順番・タイミング・おすすめの飲み方をLINEでまとめています。登録後すぐに確認できます。イベント参加者限定の割引クーポンもLINEから取得できます。</p>
+
       </div>
     </div>
 
