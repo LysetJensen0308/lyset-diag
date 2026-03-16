@@ -297,7 +297,7 @@ body::before{
 }
 @keyframes spin{to{transform:rotate(360deg)}}
 .load-ttl{font-family:'Noto Serif JP',serif;font-size:15px;color:var(--rose);letter-spacing:.08em;margin-bottom:7px}
-.load-sub{font-size:11.5px;color:rgba(255,255,255,.4);letter-spacing:.06em}
+.load-sub{font-size:11.5px;color:rgba(139,26,46,.5);letter-spacing:.06em}
 
 /* ══════════════════════════════════
    SCREEN: RESULT
@@ -310,7 +310,7 @@ body::before{
 /* 年齢リング */
 .ring-wrap{position:relative;width:156px;height:156px;margin:0 auto 12px}
 .ring-svg{width:156px;height:156px;transform:rotate(-90deg)}
-.ring-bg{fill:none;stroke:rgba(255,255,255,.1);stroke-width:9}
+.ring-bg{fill:none;stroke:rgba(196,105,122,.15);stroke-width:9}
 .ring-arc{
   fill:none;stroke:var(--rose);stroke-width:9;
   stroke-linecap:round;
@@ -325,12 +325,12 @@ body::before{
 }
 .ring-age{
   font-family:'Cormorant Garamond',serif;
-  font-size:58px;font-weight:300;line-height:1;color:var(--white);
+  font-size:58px;font-weight:300;line-height:1;color:var(--rose);
   opacity:0;transform:scale(.82);
   transition:all .55s cubic-bezier(.16,1,.3,1) 1s;
 }
 .ring-age.show{opacity:1;transform:scale(1)}
-.ring-unit{font-size:13px;letter-spacing:.1em;color:rgba(255,255,255,.55)}
+.ring-unit{font-size:13px;letter-spacing:.1em;color:rgba(139,26,46,.7)}
 
 .diff-pill{
   display:inline-flex;align-items:center;gap:6px;
@@ -342,7 +342,7 @@ body::before{
 .diff-pill.warn {background:rgba(184,147,90,.15);color:var(--gold);border:1px solid var(--gold)}
 .diff-pill.alert{background:rgba(196,105,122,.15);color:var(--rose);border:1px solid var(--rose)}
 
-.res-type{font-size:14px;color:rgba(255,255,255,.7);letter-spacing:.04em}
+.res-type{font-size:14px;color:rgba(80,20,30,.8);letter-spacing:.04em}
 
 /* スコア内訳 */
 .sec-lbl{
@@ -352,9 +352,9 @@ body::before{
 .score-list{display:flex;flex-direction:column;gap:11px;margin-bottom:6px}
 .score-row{}
 .score-meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px}
-.score-cat{font-size:12px;color:rgba(255,255,255,.72);letter-spacing:.06em}
+.score-cat{font-size:12px;color:rgba(80,20,30,.75);letter-spacing:.06em}
 .score-pts{font-size:12px;font-weight:500}
-.score-track{height:6px;background:rgba(255,255,255,.1);border-radius:99px;overflow:hidden}
+.score-track{height:6px;background:rgba(196,105,122,.15);border-radius:99px;overflow:hidden}
 .score-bar{height:100%;border-radius:99px;width:0;transition:width 1.2s cubic-bezier(.16,1,.3,1)}
 .c-good {background:var(--mint)}
 .c-warn {background:var(--gold)}
@@ -386,44 +386,44 @@ body::before{
   width:32px;height:32px;border-radius:50%;
   display:flex;align-items:center;justify-content:center;
   font-family:'Cormorant Garamond',serif;
-  font-size:15px;font-weight:300;color:var(--forest);
+  font-size:15px;font-weight:300;color:#FFFFFF;
   margin-top:2px;
 }
 .step1-num{background:var(--rose)}
 .step2-num{background:var(--gold)}
 .prod-content{}
 .prod-name{
-  font-size:13.5px;font-weight:500;color:var(--white);
+  font-size:13.5px;font-weight:500;color:var(--rose);
   margin-bottom:3px;line-height:1.5;
 }
 .prod-role{
-  font-size:11px;color:rgba(255,255,255,.55);line-height:1.75;
+  font-size:11px;color:rgba(80,30,40,.7);line-height:1.75;
   margin-bottom:6px;
 }
 .prod-tags{display:flex;flex-wrap:wrap;gap:5px}
 .prod-tag{
   font-size:10px;letter-spacing:.07em;
-  color:rgba(255,255,255,.65);
-  background:rgba(255,255,255,.08);
+  color:var(--rose);
+  background:rgba(139,26,46,.08);
   padding:2px 9px;border-radius:99px;
 }
 
-.divider{height:1px;background:rgba(255,255,255,.1);margin:4px 0}
+.divider{height:1px;background:rgba(196,105,122,.2);margin:4px 0}
 
 /* CTA ブロック */
 .cta-block{
-  background:var(--cream);border-radius:var(--r);
+  background:#7A1525;border-radius:var(--r);
   overflow:hidden;margin-top:20px;margin-bottom:12px;
 }
 .cta-top{background:#7A1525;padding:16px 18px}
-.cta-top-eyebrow{font-size:9.5px;letter-spacing:.2em;color:var(--mintlt);margin-bottom:6px}
+.cta-top-eyebrow{font-size:9.5px;letter-spacing:.2em;color:rgba(255,220,220,.9);margin-bottom:6px}
 .cta-top-ttl{
   font-family:'Noto Serif JP',serif;
   font-size:15px;font-weight:400;line-height:1.6;
   color:var(--white);letter-spacing:.04em;
 }
 .cta-body{padding:16px 18px 20px}
-.cta-body p{font-size:12.5px;color:var(--mid);line-height:1.8;margin-bottom:14px}
+.cta-body p{font-size:12.5px;color:rgba(255,220,220,.85);line-height:1.8;margin-bottom:14px}
 .cta-primary{
   display:block;width:100%;padding:15px;
   background:#FFFFFF;color:var(--rose);
@@ -493,7 +493,7 @@ body::before{
     <h1 class="s0-ttl">1分でわかる！<br>私の<span class="ac">『親コンディション』</span><br>セルフチェック</h1>
     <p class="s0-sub">
       腸・睡眠・メンタル——<br>
-      子育て中のお母さんの体は、<strong style="color:#fff">知らないうちに消耗</strong>しています。<br>
+      子育て中のお母さんの体は、<strong style="color:#8B1A2E">知らないうちに消耗</strong>しています。<br>
       10問・約1分で、今のコンディション年齢を診断します。
     </p>
     <div class="s0-stats">
@@ -869,10 +869,10 @@ function buildResult(){
       <div class="res-type">「${type}」</div>
     </div>
 
-    <p style="font-size:14px;color:rgba(255,255,255,.82);line-height:1.85;margin-bottom:6px">
+    <p style="font-size:14px;color:rgba(60,20,30,.85);line-height:1.85;margin-bottom:6px">
       あなたの親コンディション年齢は<strong style="color:#fff;font-size:16px">${condAge}歳</strong>です。
     </p>
-    <p style="font-size:12.5px;color:rgba(255,255,255,.55);line-height:1.8;margin-bottom:0">
+    <p style="font-size:12.5px;color:rgba(80,30,40,.65);line-height:1.8;margin-bottom:0">
       ${getDiffComment(diff)}
     </p>
 
@@ -943,13 +943,13 @@ function buildResult(){
     <div class="cta-block">
       <div class="cta-top">
         <div class="cta-top-eyebrow">NEXT STEP</div>
-        <div class="cta-top-ttl">使い方・飲む順番・<br>イベント限定クーポンはLINEで</div>
+        <div class="cta-top-ttl">LINEでサンプルの使い方＋<br>イベント限定クーポンを受け取る</div>
       </div>
       <div class="cta-body">
         <a href="https://line.me/R/ti/p/@130lbjna" class="cta-primary">
           🎁 友だち追加してクーポンを受け取る
         </a>
-        <p style="margin-top:14px">飲む順番・タイミング・おすすめの飲み方をLINEでまとめています。登録後すぐに確認できます。イベント参加者限定の割引クーポンもLINEから取得できます。</p>
+        <p style="margin-top:14px">スムーズフリー・生酵素それぞれの飲む順番・タイミング・量のポイントをまとめています。登録後すぐに確認できます。</p>
 
       </div>
     </div>
