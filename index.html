@@ -422,19 +422,20 @@ body::before{
   font-size:15px;font-weight:400;line-height:1.6;
   color:var(--white);letter-spacing:.04em;
 }
-.cta-body{padding:16px 18px 20px}
-.cta-body p{font-size:12.5px;color:rgba(255,220,220,.85);line-height:1.8;margin-bottom:14px}
+.cta-body{padding:18px 18px 22px;background:#FDF0F2;}
+.cta-body p{font-size:12.5px;color:rgba(80,20,30,.7);line-height:1.8;margin-bottom:0}
 .cta-primary{
-  display:block;width:100%;padding:15px;
-  background:#FFFFFF;color:var(--rose);
+  display:block;width:100%;padding:16px;
+  background:var(--rose);color:#FFFFFF;
   border:none;border-radius:var(--r);
   font-family:'Noto Sans JP',sans-serif;
-  font-size:13px;font-weight:700;letter-spacing:.1em;
+  font-size:14px;font-weight:700;letter-spacing:.08em;
   text-align:center;text-decoration:none;
-  cursor:pointer;transition:all .2s;margin-bottom:10px;
+  cursor:pointer;transition:all .2s;margin-bottom:14px;
+  box-shadow:0 3px 12px rgba(139,26,46,.3);
   -webkit-tap-highlight-color:transparent;
 }
-.cta-primary:active{background:#f0e0e0}
+.cta-primary:active{background:#7A1525}
 .cta-secondary{
   display:block;width:100%;padding:12px;
   background:transparent;color:var(--green);
@@ -869,8 +870,8 @@ function buildResult(){
       <div class="res-type">「${type}」</div>
     </div>
 
-    <p style="font-size:14px;color:rgba(60,20,30,.85);line-height:1.85;margin-bottom:6px">
-      あなたの親コンディション年齢は<strong style="color:#fff;font-size:16px">${condAge}歳</strong>です。
+    <p style="font-size:14px;color:rgba(60,20,30,.85);line-height:1.85;margin-bottom:6px" id="res-age-txt"">
+      あなたの親コンディション年齢は<strong style="color:var(--rose);font-size:20px;font-weight:700">${condAge}歳</strong>です。
     </p>
     <p style="font-size:12.5px;color:rgba(80,30,40,.65);line-height:1.8;margin-bottom:0">
       ${getDiffComment(diff)}
